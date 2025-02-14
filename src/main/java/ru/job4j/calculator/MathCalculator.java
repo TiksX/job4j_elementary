@@ -21,7 +21,7 @@ public class MathCalculator {
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчета разности равен: " + differenceAndMultiply(10, 20));
+        System.out.println("Результат расчета разности равен: " + differenceAndMultiply(20, 10));
         System.out.println("Результат расчета деления равен: " + divisionAndMultiply(10, 20));
     }
 }
