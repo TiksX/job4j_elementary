@@ -6,8 +6,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class EqualLastTest {
     @Test
     public void whenEqual() {
-        int[] left = {1, 2, 4};
-        int[] right = {5, 4, 4};
+        int[] left = {1, 2, 3};
+        int[] right = {5, 4, 3};
         boolean result = EqualLast.check(left, right);
         assertThat(result).isTrue();
     }
