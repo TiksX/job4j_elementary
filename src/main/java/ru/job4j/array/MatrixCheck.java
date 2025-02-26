@@ -16,5 +16,16 @@ public class MatrixCheck {
     public static boolean isFalse(char[][] board, int row) {
         return !monoHorizontal(board, row);
     }
+
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int vol = 0; vol < board.length; vol++) {
+            if (board[vol][column] == ' ') {
+                result = false;
+                break;
+            }
+        }
+        return result;
+    }
 }
 
