@@ -8,7 +8,8 @@ public class Machine {
         int[] result = new int[100];
         int size = 0;
         for (int coin : coins) {
-            while (money - price >= coin) {  // прямо в условии вычисляем разницу
+            while (money - price >= coin) {
+
                 money -= coin;
                 result[size++] = coin;
             }
