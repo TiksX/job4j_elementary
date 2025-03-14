@@ -6,6 +6,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MaxTest {
 
     @Test
+    void testMaxOfTwoNumbers() {
+        Max maxFinder = new Max();
+        assertEquals(10, maxFinder.findMax(5, 10));
+        assertEquals(3, maxFinder.findMax(3, 3));
+        assertEquals(-1, maxFinder.findMax(-1, -5));
+    }
+
+    @Test
     void testMaxOfThreeNumbers() {
         Max maxFinder = new Max();
         assertEquals(10, maxFinder.findMax(5, 10, 7));

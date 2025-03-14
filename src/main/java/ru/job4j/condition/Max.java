@@ -2,6 +2,10 @@ package ru.job4j.condition;
 
 public class Max {
 
+    public int findMax(int a, int b) {
+        return Math.max(a, b);
+    }
+
     public int findMax(int a, int b, int c) {
         return Math.max(a, Math.max(b, c));
     }
