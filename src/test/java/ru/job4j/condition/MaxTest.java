@@ -8,23 +8,23 @@ class MaxTest {
     @Test
     void testMaxOfTwoNumbers() {
         Max maxFinder = new Max();
-        assertEquals(10, maxFinder.findMax(5, 10));
-        assertEquals(3, maxFinder.findMax(3, 3));
-        assertEquals(-1, maxFinder.findMax(-1, -5));
+        assertEquals(10, maxFinder.max(5, 10));
+        assertEquals(3, maxFinder.max(3, 3));
+        assertEquals(-1, maxFinder.max(-1, -5));
     }
 
     @Test
     void testMaxOfThreeNumbers() {
         Max maxFinder = new Max();
-        assertEquals(10, maxFinder.findMax(5, 10, 7));
-        assertEquals(3, maxFinder.findMax(3, 3, 3));
-        assertEquals(-1, maxFinder.findMax(-1, -5, -3));
+        assertEquals(10, maxFinder.max(5, 10, 7));
+        assertEquals(3, maxFinder.max(3, 3, 3));
+        assertEquals(-1, maxFinder.max(-1, -5, -3));
     }
 
     @Test
     void testMaxOfFourNumbers() {
         Max maxFinder = new Max();
-        assertEquals(8, maxFinder.findMax(2, 8, 6, 4));
-        assertEquals(-1, maxFinder.findMax(-1, -5, -3, -2));
+        assertEquals(8, maxFinder.max(2, 8, 6, 4));
+        assertEquals(-1, maxFinder.max(-1, -5, -3, -2));
     }
 }
