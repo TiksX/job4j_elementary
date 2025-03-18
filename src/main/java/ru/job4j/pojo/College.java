@@ -1,7 +1,6 @@
 package ru.job4j.pojo;
 
 import java.util.Date;
-import java.time.format.DateTimeFormatter;
 
 public class College {
 
